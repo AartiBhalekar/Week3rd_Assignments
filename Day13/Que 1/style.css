@@ -1,0 +1,20 @@
+input[type="button"]
+            {
+                background-color:powderblue;
+                color: black;
+                border: black 3px;
+                width:100%
+            }
+  
+            input[type="text"]
+            {
+                background-color:white;
+                border: black 3px;
+                width:100%
+            }
+
+            table, th, td 
+            {
+                text-align: center;
+                padding: 8px;
+            }

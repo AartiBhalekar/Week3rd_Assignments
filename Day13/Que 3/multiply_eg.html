@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Multiply_Eg</title>
+        <script>
+            let a = 1;
+            var interval;
+
+            function multi(value)
+            {
+                if(isNaN(value))
+                {
+                    console.log("Please enter the correct value");
+                }
+                else
+                {
+                    document.getElementById("result").innerHTML += "<br>"+value * a;
+                    a++;
+                }
+            }
+
+            function display()
+            {
+                let value = Number(document.getElementById("value").value);
+                interval =  setInterval(multi, 1000, value);
+            }
+
+            function stop()
+            {
+                clearInterval(interval);
+            }
+        </script>
+    </head>
+
+    <body>
+        
+        Enter a number: <input type="text" name="value" id="value" />
+        
+        <button name="multiple" id="multiple" onclick="display();" value="Go">Go</button> 
+        
+        <button name="stop" id="stop" onclick="stop();" value="Stop">Stop</button> 
+        
+        <div id="result"></div>
+    </body>
+</html>
