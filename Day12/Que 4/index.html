@@ -1,0 +1,23 @@
+<html>
+    <head>
+	    <title>Addition</title>
+
+        <script>
+	        function addition()
+            {
+		        let a = Number(document.getElementById("value1").value);
+
+		        let b = Number(document.getElementById("value2").value);
+
+		        document.getElementById("result").innerHTML= a+b;
+	        }
+        </script>
+    </head>
+
+    <body>
+        Enter 1st value : <input type="" name="value1" id="value1" value="" /><br>
+        Enter 2nd value : <input type="text" name="value2" id="value2" value="" /><br>
+        <input type="button" name="button" value="Additon" onclick="addition();"><br>
+        Result : <div id="result"></div>
+    </body>
+</html>
