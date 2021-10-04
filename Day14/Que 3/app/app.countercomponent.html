@@ -1,0 +1,9 @@
+<div class="counter">
+    <button (click)="decrement()" [disabled]="count == minValue">
+      Decrement
+    </button>
+    <input type="text" value="{{count}}" [(ngModel)]="count"/>
+    <button (click)="increment()" [disabled]="count == maxValue">
+      Increment
+    </button>
+  </div>
